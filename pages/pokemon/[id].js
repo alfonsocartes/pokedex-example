@@ -29,11 +29,11 @@ export async function getStaticPaths() {
   const numberOfPokemons = 150;
   let paths = [];
 
-  for (var i = 0; i < numberOfPokemons; i++) {
+  for (var i = 1; i < numberOfPokemons; i++) {
     paths.push({ params: { id: `${i}` } });
   }
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 }
