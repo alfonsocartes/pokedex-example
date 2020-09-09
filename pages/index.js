@@ -1,4 +1,4 @@
-import Layout from "../components/Layouts";
+import Layout from "../components/Layout";
 import Link from "next/Link";
 
 export default function Home({ pokemons }) {
@@ -7,9 +7,14 @@ export default function Home({ pokemons }) {
       <h1 className="text-4xl mb-8 text-center">Welcome to the Pokedex!</h1>
       <ul>
         {pokemons.map((pokemon, index) => {
+          /* Server Side Rendering: */
+          const ssrHref = `/pokemon?id=${index + 1}`;
+          /* Static Site Generation: */
+          const ssgHref = `/pokemon/${index + 1}`;
           return (
             <li key={index}>
-              <Link href={`/pokemon?id${index + 1}`}>
+              {/* Change here for testing SSR or SSG: */}
+              <Link href={ssgHref}>
                 <a className="border p-4 border-gray my-2 capitalize flex items-center text-lg bg-gray-200 rounded-md">
                   <img
                     className="w-20 h-20 mr-3"
