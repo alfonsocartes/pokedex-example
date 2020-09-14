@@ -12,7 +12,7 @@ export default function Header({ buttonLink, buttonText }) {
           Pokedex
         </h1>
         <p className="leading-relaxed text-base text-purple-500">
-          Take a look at the 1st Gen Pokemons
+          1st Gen Pokemons
         </p>
       </div>
       <div className="w-1/10">
