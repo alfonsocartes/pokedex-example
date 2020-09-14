@@ -1,8 +1,20 @@
 # Pokédex Example
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Pokédex is a DEMO web app to showcase web development technologies such as:
+
+- ReactJS
+- NextJS
+- Static Site Generation
+- Server Side Rendering
+- RESTful API
+- TailWind CSS
+- HTML 5
+
+Open [https://pokedex-example.vercel.app](https://pokedex-example.vercel.app) with your browser to see the result.
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
