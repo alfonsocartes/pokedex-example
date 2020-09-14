@@ -86,7 +86,7 @@ export default function about() {
                   rel="noopener noreferrer"
                   class="text-purple-700 inline-flex items-center"
                 >
-                  Github
+                  GitHub
                   <svg
                     fill="none"
                     stroke="currentColor"
