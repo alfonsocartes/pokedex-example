@@ -15,19 +15,6 @@ import Link from "next/Link";
 export default function Home({ pokemons }) {
   return (
     <Layout title="Pokedex">
-      <div class="flex flex-wrap flex-col mb-4 p-8 items-center text-center rounded overflow-hidden shadow-lg bg-white">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-purple-700">
-          Pokedex
-        </h1>
-        <p class="lg:w-1/2 w-full leading-relaxed text-base text-purple-500">
-          Take a look at the 1st Gen Pokemons
-        </p>
-        <Link href="/about">
-          <button className="text-white bg-purple-600 hover:bg-purple-800 min-w-full px-6 py-4 text-l text-center font-bold capitalize rounded overflow-hidden">
-            {pokemon.name}
-          </button>
-        </Link>
-      </div>
       <div className="flex justify-evenly flex-wrap">
         {pokemons.map((pokemon, index) => {
           /* Server Side Rendering: */

@@ -4,6 +4,7 @@
 import React from "react";
 import Head from "next/Head";
 import Footer from "./Footer";
+import Header from "./Header";
 
 export default function Layout({ title, children }) {
   return (
@@ -12,6 +13,7 @@ export default function Layout({ title, children }) {
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
       <main className="container mx-auto pt-8 min-h-screen">{children}</main>
       <Footer />
     </div>
