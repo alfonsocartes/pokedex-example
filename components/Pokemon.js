@@ -2,7 +2,7 @@
 //  Copyright © Alfonso Cartes. All rights reserved.
 
 import React from "react";
-import Link from "next/Link";
+import Link from "next/link";
 import Layout from "../components/Layout";
 
 export default function Pokemon({ pokemon }) {

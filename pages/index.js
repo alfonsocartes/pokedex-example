@@ -1,7 +1,7 @@
 //  Created by Alfonso Cartes.
 //  Copyright © Alfonso Cartes. All rights reserved.
 
-import Link from "next/Link";
+import Link from "next/link";
 import Layout from "../components/Layout";
 
 export default function Home({ pokemons }) {

@@ -2,7 +2,7 @@
 //  Copyright © Alfonso Cartes. All rights reserved.
 
 import React from "react";
-import Link from "next/Link";
+import Link from "next/link";
 
 export default function Header({ buttonLink, buttonText }) {
   return (
