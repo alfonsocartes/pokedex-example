@@ -1,16 +1,32 @@
+//  Created by Alfonso Cartes.
+//  Copyright © Alfonso Cartes. All rights reserved.
+
 import Layout from "../components/Layout";
 import Link from "next/Link";
+
+/*
+ *
+ * Main Component.
+ * Component to add a new note: ID(UUID), Title and Content
+ * To see it in context, please take a look at /components/Notes.jsx
+ *
+ */
 
 export default function Home({ pokemons }) {
   return (
     <Layout title="Pokedex">
       <div class="flex flex-wrap flex-col mb-4 p-8 items-center text-center rounded overflow-hidden shadow-lg bg-white">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-purple-700">
-          Pokemon Pokedex
+          Pokedex
         </h1>
         <p class="lg:w-1/2 w-full leading-relaxed text-base text-purple-500">
           Take a look at the 1st Gen Pokemons
         </p>
+        <Link href="/about">
+          <button className="text-white bg-purple-600 hover:bg-purple-800 min-w-full px-6 py-4 text-l text-center font-bold capitalize rounded overflow-hidden">
+            {pokemon.name}
+          </button>
+        </Link>
       </div>
       <div className="flex justify-evenly flex-wrap">
         {pokemons.map((pokemon, index) => {
@@ -37,23 +53,7 @@ export default function Home({ pokemons }) {
                       {pokemon.name}
                     </button>
                   </Link>
-                  {/* <p className="text-gray-700 text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                      exercitationem praesentium nihil.
-                    </p> */}
                 </div>
-                {/* <div className="px-6 pt-4 pb-2">
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                      #photography
-                    </span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                      #travel
-                    </span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                      #winter
-                    </span>
-                  </div> */}
               </div>
             </div>
           );

@@ -1,3 +1,6 @@
+//  Created by Alfonso Cartes.
+//  Copyright © Alfonso Cartes. All rights reserved.
+
 import React from "react";
 import Link from "next/Link";
 import Layout from "../components/Layout";

@@ -1,5 +1,9 @@
+//  Created by Alfonso Cartes.
+//  Copyright © Alfonso Cartes. All rights reserved.
+
 import React from "react";
 import Head from "next/Head";
+import Footer from "./Footer";
 
 export default function Layout({ title, children }) {
   return (
@@ -9,6 +13,7 @@ export default function Layout({ title, children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="container mx-auto pt-8 min-h-screen">{children}</main>
+      <Footer />
     </div>
   );
 }
