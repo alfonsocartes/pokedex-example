@@ -4,14 +4,6 @@
 import Link from "next/Link";
 import Layout from "../components/Layout";
 
-/*
- *
- * Main Component.
- * Component to add a new note: ID(UUID), Title and Content
- * To see it in context, please take a look at /components/Notes.jsx
- *
- */
-
 export default function Home({ pokemons }) {
   return (
     <Layout title="Pokedex" buttonLink="/about" buttonText="About">
