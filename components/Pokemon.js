@@ -5,25 +5,92 @@ import Layout from "../components/Layout";
 export default function Pokemon({ pokemon }) {
   return (
     <Layout title={pokemon.name}>
-      <h1 className="text-4xl mb-8 text-center capitalize">{pokemon.name}</h1>
-      <img className="mx-auto" src={pokemon.image} alt={pokemon.name}></img>
-      <p>
-        <span className="font-bold mr-2">Weight: </span>
-        {pokemon.weight}
-      </p>
-      <p>
-        <span className="font-bold mr-2">Height: </span>
-        {pokemon.height}
-      </p>
-      <h2 className="text-2xl mt-6 mb-2">Types</h2>
-      {pokemon.types.map((type, index) => (
-        <p key={index}>- {type.type.name}</p>
-      ))}
-      <p className="mt-10 text-center">
-        <Link href="/">
-          <a className="text-2xl underline">Back Home</a>
-        </Link>
-      </p>
+      <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <img
+            className="object-cover object-center rounded"
+            alt={pokemon.name}
+            src={pokemon.image}
+          />
+        </div>
+        <div class="w-full flex flex-wrap flex-col mb-4 p-8 items-center text-center rounded-lg overflow-hidden shadow-lg bg-white">
+          <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-purple-700 capitalize">
+            {pokemon.name}
+          </h1>
+          <h2 className="title-font sm:text-2xl text-xl mb-4 font-medium text-purple-700">
+            <span>#{pokemon.id + 1}</span>
+          </h2>
+          <div className="w-full flex flex-wrap">
+            <div className="w-full p-4">
+              <div className="p-8 rounded overflow-hidden shadow-lg bg-purple-100">
+                <h2 className="text-2xl mb-2  font-medium text-purple-700">
+                  Stats
+                </h2>
+                <div className="flex flex-wrap flex-row text-left">
+                  <div className="w-full xl:w-1/3">
+                    <span className="font-bold mr-2 ">Weight: </span>
+                    {pokemon.weight}
+                  </div>
+                  <div className="w-full xl:w-1/3">
+                    <span className="font-bold mr-2">Height: </span>
+                    {pokemon.height}
+                  </div>
+                  <div className="w-full xl:w-1/3">
+                    <span className="font-bold mr-2">Base experience: </span>
+                    {pokemon.base_experience}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
+              <div className="p-8 rounded overflow-hidden shadow-lg bg-purple-100">
+                <h2 className="text-2xl mb-2  font-medium text-purple-700">
+                  Types
+                </h2>
+                {pokemon.types.map((type, index) => (
+                  <p key={index} className="text-left capitalize">
+                    - {type.type.name}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div className="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
+              <div className="p-8 rounded overflow-hidden shadow-lg bg-purple-100">
+                <h2 className="text-2xl mb-2  font-medium text-purple-700">
+                  Abilities
+                </h2>
+                {pokemon.abilities.map((ability, index) => (
+                  <p key={index} className="text-left capitalize">
+                    - {ability.ability.name}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full p-8 rounded-lg overflow-hidden shadow-lg bg-white">
+        <h2 className="text-3xl mb-2 text-center font-medium text-purple-700">
+          Moves
+        </h2>
+        <div className="flex flex-wrap justify-evenly flex-row">
+          {pokemon.moves.map((move, index) => (
+            <div
+              key={index}
+              className="m-2 w-1/3 sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/7 mb-4 p-2 rounded-lg border border-purple-300"
+            >
+              <p className="text-left capitalize">{move.move.name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <button className="inline-flex text-white border-0 mt-4 mb-8 py-2 px-6 focus:outline-none bg-purple-600 hover:bg-purple-800 rounded text-lg">
+          <Link href="/">
+            <a>Back Home</a>
+          </Link>
+        </button>
+      </div>
     </Layout>
   );
 }
