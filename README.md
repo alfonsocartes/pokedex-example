@@ -16,15 +16,21 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To test Static Site Generation and Server Side Rendering please take a look at the seccion in `pages/index.js`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Change here for testing SSR or SSG:
+<Link href={
+    ssgHref
+    # or
+    ssrHref
+}>
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## PokeApi
 
-## Deploy on Vercel
+Thanks to everyone at [PokeAPI](https://pokeapi.co/) for making it possible.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Pokémon
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Pokémon and Pokémon character names are trademarks of Nintendo.

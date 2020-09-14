@@ -60,7 +60,7 @@ export default function about() {
               <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                 <div class="leading-relaxed text-md mb-4">
                   <p>
-                    <strong>Pokedex is a DEMO web app</strong> to showcase web
+                    <strong>Pokédex is a DEMO web app</strong> to showcase web
                     development technologies such as:
                   </p>
                   <ul class="list-disc leading-relaxed text-md m-4">
@@ -68,6 +68,7 @@ export default function about() {
                     <li>NextJS</li>
                     <li>Static Site Generation</li>
                     <li>Server Side Rendering</li>
+                    <li>RESTful API</li>
                     <li>TailWind CSS</li>
                     <li>HTML 5</li>
                   </ul>

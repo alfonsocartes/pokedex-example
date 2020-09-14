@@ -9,10 +9,10 @@ export default function Header({ buttonLink, buttonText }) {
     <div className="flex mb-4 p-8 items-center text-center rounded overflow-hidden shadow-lg bg-white">
       <div className="w-full">
         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-purple-700">
-          Pokedex
+          Pokédex
         </h1>
         <p className="leading-relaxed text-base text-purple-500">
-          1st Gen Pokemons
+          1st Gen Pokémon
         </p>
       </div>
       <div className="w-1/10">
