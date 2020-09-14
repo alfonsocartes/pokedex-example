@@ -29,7 +29,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const numberOfPokemons = 150;
+  const numberOfPokemons = 151;
   let paths = [];
 
   for (var i = 1; i < numberOfPokemons; i++) {
