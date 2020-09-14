@@ -10,7 +10,7 @@ Pokédex is a DEMO web app to showcase web development technologies such as:
 - TailWind CSS
 - HTML 5
 
-Open [https://pokedex-example.vercel.app](https://pokedex-example.vercel.app) with your browser to see the result.
+Open [https://pokedex-example-sigma.vercel.app/](https://pokedex-example-sigma.vercel.app/) with your browser to see the result.
 
 ## Getting Started
 
