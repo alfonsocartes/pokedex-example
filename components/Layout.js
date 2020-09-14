@@ -2,7 +2,7 @@
 //  Copyright © Alfonso Cartes. All rights reserved.
 
 import React from "react";
-import Head from "next/Head";
+import Head from "next/head";
 import Footer from "./Footer";
 import Header from "./Header";
 
