@@ -39,7 +39,6 @@ export default function about() {
                       target="_blank"
                       rel="noopener noreferrer"
                       class="text-purple-700 ml-1"
-                      target="_blank"
                     >
                       {" "}
                       www.cartes.dev{" "}
@@ -52,7 +51,6 @@ export default function about() {
                       target="_blank"
                       rel="noopener noreferrer"
                       class="text-purple-700 ml-1"
-                      target="_blank"
                     >
                       @cartes_dev
                     </a>
@@ -81,7 +79,12 @@ export default function about() {
                     <em>Please see the comments in the file.</em>
                   </p>
                 </div>
-                <a class="text-purple-700 inline-flex items-center">
+                <a
+                  href="https://github.com/alfonsocartes/pokedex-example"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-purple-700 inline-flex items-center"
+                >
                   Github
                   <svg
                     fill="none"
