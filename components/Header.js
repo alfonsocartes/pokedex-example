@@ -4,7 +4,7 @@
 import React from "react";
 import Link from "next/Link";
 
-export default function Header() {
+export default function Header({ buttonLink, buttonText }) {
   return (
     <div className="flex mb-4 p-8 items-center text-center rounded overflow-hidden shadow-lg bg-white">
       <div className="w-full">
@@ -16,9 +16,9 @@ export default function Header() {
         </p>
       </div>
       <div className="w-1/10">
-        <Link href="/about">
+        <Link href={buttonLink}>
           <button className="text-white bg-purple-600 hover:bg-purple-800 px-2 py-1 text-center font-bold rounded">
-            About
+            {buttonText}
           </button>
         </Link>
       </div>

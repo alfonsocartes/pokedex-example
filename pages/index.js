@@ -1,8 +1,8 @@
 //  Created by Alfonso Cartes.
 //  Copyright © Alfonso Cartes. All rights reserved.
 
-import Layout from "../components/Layout";
 import Link from "next/Link";
+import Layout from "../components/Layout";
 
 /*
  *
@@ -14,7 +14,7 @@ import Link from "next/Link";
 
 export default function Home({ pokemons }) {
   return (
-    <Layout title="Pokedex">
+    <Layout title="Pokedex" buttonLink="/about" buttonText="About">
       <div className="flex justify-evenly flex-wrap">
         {pokemons.map((pokemon, index) => {
           /* Server Side Rendering: */

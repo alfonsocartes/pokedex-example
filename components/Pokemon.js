@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 
 export default function Pokemon({ pokemon }) {
   return (
-    <Layout title={pokemon.name}>
+    <Layout title={pokemon.name} buttonLink="/" buttonText="Home">
       <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <img
