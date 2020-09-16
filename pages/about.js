@@ -28,7 +28,7 @@ export default function about() {
                   </h2>
                   <div class="w-12 h-1 bg-purple-700 rounded mt-2 mb-4"></div>
                   <p class="text-left text-gray-600">
-                    Hey, thanks for taking a look at this demo app excercise.
+                    Hey, thanks for taking a look at this demo app.
                   </p>
                   <br />
                   <p class="text-left text-gray-600">
@@ -44,7 +44,7 @@ export default function about() {
                       www.cartes.dev{" "}
                     </a>
                     <br />
-                    and follow me on twitter:
+                    and follow me on Twitter:
                     <br />
                     <a
                       href="https://twitter.com/cartes_dev"
