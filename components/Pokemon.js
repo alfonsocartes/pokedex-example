@@ -3,6 +3,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Layout from "../components/Layout";
 
 export default function Pokemon({ pokemon }) {
@@ -10,10 +11,12 @@ export default function Pokemon({ pokemon }) {
     <Layout title={pokemon.name} buttonLink="/" buttonText="Home">
       <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-          <img
+          <Image
             className="object-cover object-center rounded"
             alt={pokemon.name}
             src={pokemon.image}
+            width={475}
+            height={475}
           />
         </div>
         <div className="w-full flex flex-wrap flex-col mb-4 p-8 items-center text-center rounded-lg overflow-hidden shadow-lg bg-white">

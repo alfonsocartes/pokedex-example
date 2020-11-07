@@ -2,6 +2,7 @@
 //  Copyright © Alfonso Cartes. All rights reserved.
 
 import Link from "next/link";
+import Image from "next/image";
 import Layout from "../components/Layout";
 
 export default function Home({ pokemons }) {
@@ -16,10 +17,12 @@ export default function Home({ pokemons }) {
           return (
             <div key={index} className="md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 ">
               <div className="max-w-sm m-2 rounded overflow-hidden shadow-lg mb-4 bg-white">
-                <img
+                <Image
                   className="w-full"
                   src={pokemon.image}
                   alt={pokemon.name}
+                  width={475}
+                  height={475}
                 />
                 <div className="px-6 py-4 text-center">
                   <div className="font-bold text-xl mb-2 ">
