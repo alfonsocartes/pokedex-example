@@ -1,8 +1,12 @@
 module.exports = {
-  purge: [],
+  purge: ["./**/*.js"],
   theme: {
     extend: {},
   },
   variants: {},
   plugins: [],
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
 };
