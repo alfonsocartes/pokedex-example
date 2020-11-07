@@ -16,7 +16,7 @@ export default function Pokemon({ pokemon }) {
             src={pokemon.image}
           />
         </div>
-        <div class="w-full flex flex-wrap flex-col mb-4 p-8 items-center text-center rounded-lg overflow-hidden shadow-lg bg-white">
+        <div className="w-full flex flex-wrap flex-col mb-4 p-8 items-center text-center rounded-lg overflow-hidden shadow-lg bg-white">
           <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-purple-700 capitalize">
             {pokemon.name}
           </h1>
