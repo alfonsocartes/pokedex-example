@@ -16,7 +16,7 @@ export default function Home({ pokemons }) {
           const ssgHref = `/pokemon/${index + 1}`;
           return (
             <div key={index} className="md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 ">
-              <div className="max-w-sm m-2 rounded overflow-hidden shadow-lg mb-4 bg-white">
+              <div className="max-w-sm m-2 rounded overflow-hidden shadow-lg mb-4 bg-white dark:bg-gray-800">
                 <Image
                   className="w-full"
                   src={pokemon.image}
@@ -25,7 +25,7 @@ export default function Home({ pokemons }) {
                   height={475}
                 />
                 <div className="px-6 py-4 text-center">
-                  <div className="font-bold text-xl mb-2 ">
+                  <div className="font-bold text-xl mb-2 text-gray-900 dark:text-gray-200 ">
                     <span>#{index + 1}</span>
                   </div>
                   {/* Change here for testing SSR or SSG: */}

@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export default function Header({ buttonLink, buttonText }) {
   return (
-    <div className="z-10 sticky top-0 flex mb-2 p-3 items-center text-center rounded overflow-hidden shadow-lg bg-white">
+    <div className="z-10 sticky top-0 flex mb-2 p-3 items-center text-center rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800">
       <div className="w-full">
-        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-purple-700">
+        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-purple-700 dark:text-purple-400">
           Pokédex
         </h1>
         {/* <p className="leading-relaxed text-base text-purple-500">

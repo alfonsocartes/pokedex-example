@@ -8,7 +8,8 @@ import Header from "./Header";
 
 export default function Layout({ title, children, buttonLink, buttonText }) {
   return (
-    <div className="bg-gradient-to-r from-teal-300 to-blue-200">
+    // <div className="bg-gradient-to-r from-teal-300 to-blue-200">
+    <div className="bg-indigo-200 dark:bg-gray-700">
       <Head>
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />

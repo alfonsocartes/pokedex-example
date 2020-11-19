@@ -9,7 +9,7 @@ import Layout from "../components/Layout";
 export default function about() {
   return (
     <Layout title="About Pokedex" buttonLink="/" buttonText="Home">
-      <section className="text-gray-700 body-font">
+      <section className="text-gray-600 dark:text-gray-300 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">
             <div className="flex flex-col sm:flex-row mt-10">
@@ -26,22 +26,22 @@ export default function about() {
                       />
                     </div>
                   </div>
-                  <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">
+                  <h2 className="font-medium title-font mt-4 text-gray-900 dark:text-gray-200 text-lg">
                     Alfonso Cartes
                   </h2>
-                  <div className="w-12 h-1 bg-purple-700 rounded mt-2 mb-4"></div>
-                  <p className="text-left text-gray-600">
+                  <div className="w-12 h-1 bg-purple-700 dark:bg-purple-400 rounded mt-2 mb-4"></div>
+                  <p className="text-left text-gray-600 dark:text-gray-300">
                     Hey, thanks for taking a look at this demo app.
                   </p>
                   <br />
-                  <p className="text-left text-gray-600">
+                  <p className="text-left text-gray-600 dark:text-gray-300">
                     Please take a look at my main website:
                     <br />
                     <a
                       href="https://www.cartes.dev"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-purple-700 ml-1"
+                      className="text-purple-700 dark:text-purple-400 ml-1"
                     >
                       {" "}
                       www.cartes.dev{" "}
@@ -53,7 +53,7 @@ export default function about() {
                       href="https://twitter.com/cartes_dev"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-purple-700 ml-1"
+                      className="text-purple-700 dark:text-purple-400 ml-1"
                     >
                       @cartes_dev
                     </a>
@@ -87,7 +87,7 @@ export default function about() {
                   href="https://github.com/alfonsocartes/pokedex-example"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-purple-700 inline-flex items-center"
+                  className="text-purple-700 dark:text-purple-400 inline-flex items-center"
                 >
                   GitHub
                   <svg
