@@ -1,13 +1,13 @@
 module.exports = {
-  purge: ["./**/*.js"],
+  purge: ['./**/*.js'],
   theme: {
-    extend: {},
+    extend: {}
   },
-  darkMode: "media",
+  darkMode: 'media',
   variants: {},
   plugins: [],
   future: {
     removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
-};
+    purgeLayersByDefault: true
+  }
+}
